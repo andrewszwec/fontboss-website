@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Jacob</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/TheCognitiveCompany-HQ-ICON-ONLY-Blue.png">
+    <link rel="icon" href="assets/img/TheCognitiveCompany-HQ-ICON-ONLY-Blue.png">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="TheSaaS">
+    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+    <meta property="og:url" content="http://thetheme.io/thesaas/">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+
+  <body>
+   
+      
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+        
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-dark" src="assets/img/tcc-logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/tcc-logo.png" alt="logo">
+          </a>
+        </div>
+        
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+          
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+        </section>
+                
+        
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- POPULATE PAGE -->
+    <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Block 4
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+
+    <!-- Header -->
+    <header class="header text-white" style="background-image: linear-gradient(120deg, #f5af19 0%, #f12711 100%);">
+      <div class="container text-center">
+
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+
+            <h1>Jacob's Prototype</h1>
+            <p class="lead-2 opacity-90 mt-6">Enter your quote. Its easy!</p>
+
+          </div>
+        </div>
+
+      </div>
+    </header><!-- /.header -->
+
+
+    <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Content - Block 3
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+    <section class="section">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-md-6 text-center text-md-left">
+              <h2>Enter Quote</h2> 
+              <br>
+            <!-- <form class="FileUploadForm" action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
+              <p>Enter email address: <input type=email name=email><br><br>
+                <input type=file name=file> 
+                <input type=submit value=Upload>
+              <div class="ProgressBar"><div class="ProgressBar__bar"></div></div>
+            </form>
+            <div class="AnalysisKeyBox">
+              <h2>Upload Complete!</h2>
+              <p>An email will be sent to you when the analysis is complete.</p>
+              <p>Your analysis key is:</p>
+              <span class="AnalysisKeyBox__key"></span><br><br>
+            </div> -->
+
+            <form class="GetResultsForm" action="http://127.0.0.1:5000/api/quote/setQuote" method="post">
+              <div class="wrapper">
+                <div class="quote">
+                  <label for="key">Enter you quote:</label>
+                  <input type="text" id="quote" name="quote" value="Life is 10% what happens to you and 90% how you react to it.">
+                </div>
+          
+                <div class="quote">
+                  <!-- <label for="key">Enter you mood:</label>
+                  <input type="dropdown" id="mood" name="mood" value="inpsirational"> -->
+                  <label for="mood">Select quote mood:</label>
+                  <input list="mood" name="mood">
+                  <datalist name="mood" id="mood">
+                    <option value=danger>danger</option>
+                    <option value=excited>excited</option>
+                    <option value=angry>angry</option>
+                    <option value=inpsirational>inpsirational</option>
+                    <option value=elegant>elegant</option>
+                    <option value=scientific>scientific</option>
+                    <option value=cold>cold</option>
+                    <option value=mysterious>mysterious</option>
+                    <option value=vibrant>vibrant</option>
+                    <option value=cheerful>cheerful</option>
+                    <option value=passion>passion</option>
+                    <option value=sad>sad</option>
+                    <option value=reliability>reliability</option>
+                    <option value=trusting>trusting</option>
+                    <option value=playful>playful</option>
+                    <option value=warm>warm</option>
+                    <option value=fresh>fresh</option>
+                    <option value=dignified>dignified</option>
+                    <option value=happy>happy</option>
+                    <option value=spiritual>spiritual</option>
+                </datalist> 
+
+                </div>
+                <br>
+                <button type="submit">Submit</button><br><br>
+              </div>
+            </form>
+            
+            <div class="AnalysisKeyBox">
+              <p>Your id is:</p>
+              <span class="AnalysisKeyBox__key" id='key'></span><br><br>
+            </div>
+          
+            <h2>Get Font and Colour</h2>
+            <p> Here is a colour and typeface we recommend based on your mood and quote. Feel free to add your own...</p>
+            <form class="GetFontColourForm" action="http://127.0.0.1:5000/api/quote/genFontsColours" method="post">
+              <div class="wrapper">
+                <div class="font">
+                  <!-- <label for="key">Enter you key:</label> -->
+                  <input type="text" id="hiddenFontKey" name="key">
+                </div>
+                <br>
+                <!-- <input type=submit value=Submit> -->
+                <button type="submit">Submit</button><br><br>
+              </div>
+            </form>
+            
+            <div class="ResultsBox">
+              <span class="ResultsBox__Text"></span><br><br>
+            </div>
+
+            <h2>Generate Image</h2>
+            <form class="GenerateQuote" action="http://127.0.0.1:5000/api/quote/generateResult" method="post">
+              <div class="wrapper">
+                <!-- RESTORE ME -->
+                <!-- <div class="font">
+                  <label for="key">Enter you key:</label>
+                  <input type="text" id="key" name="key" value="Enter key here...">
+                </div> -->
+
+                <!-- Test: Hidden -->
+                <div class="font">
+                    <!-- <label for="key">Enter you key:</label> -->
+                    <input type="hidden" id="hiddenKey" name="key">
+                </div>
+
+                <br>
+                <button type="submit">Submit</button><br><br>
+
+              </div>
+            </form>
+
+
+            <!-- End Align Text -->
+          </div> 
+
+          <div class="col-md-6 text-center text-md-left">
+            <h2>Mood Options</h2> 
+            <br>
+            <ul>
+                <li>inpsirational</li>
+                <li>mysterious</li>
+                <li>cheerful</li>
+                <li>elegant</li>
+                <li>fresh</li>
+                <li>cold</li>
+                <li>passion</li>
+                <li>dignified</li>
+                <li>playful</li>
+                <li>scientific</li>
+                <li>danger</li>
+                <li>angry</li>
+                <li>sad</li>
+                <li>reliability</li>
+                <li>happy</li>
+                <li>excited</li>
+                <li>trusting</li>
+                <li>spiritual</li>
+                <li>warm</li>
+                <li>vibrant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="index.html"><img src="assets/img/tcc-logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-facebook" href="https://www.facebook.com/thecognitiveco/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="social-twitter" href="https://twitter.com/TheCognitiveCo" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/company/thecognitiveco/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="social-medium" href="https://medium.com/@RoboAndy" target="_blank"><i class="fa fa-medium"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="https://medium.com/@RoboAndy" target="_blank">Blog</a>
+              <a class="nav-link" href="https://s3-ap-southeast-2.amazonaws.com/thecognitiveco/New+Website+Terms+and+Conditions+of+Use+--+6303362695961772032.pdf" target="_blank">Policy</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+    <!-- /POPULATE PAGE -->
+
+    <!-- Scripts -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/upload.js"></script>
+
+  </body>
+</html>
